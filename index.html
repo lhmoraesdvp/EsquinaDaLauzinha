@@ -24,426 +24,263 @@
 }
 
 body {
-    backgroundcolor:#4E3629;
+ body {
+    background-color: var(--creme); /* ou #f8f1e5 */
     color: var(--texto);
+}
 }
 
 
 /* HERO */
 
 .hero {
-
     min-height: 90vh;
-
-   background-color: #c89b3c;
+    background-color: #c89b3c;
     background-size:cover;
     background-position:center;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     text-align:center;
     color:white;
 }
 
-
 .hero-content {
-
     max-width:900px;
     padding:30px;
-
 }
-
 
 .hero h1 {
-
     font-size:3.2rem;
     margin-bottom:20px;
-
 }
-
 
 .hero p {
-
     font-size:1.3rem;
     line-height:1.6;
-
 }
-
 
 .tags {
-
     margin:30px 0;
-
 }
-
 
 .tags span {
-
     display:inline-block;
-
     background:rgba(255,255,255,.15);
-
     padding:10px 18px;
-
     margin:5px;
-
     border-radius:30px;
-
 }
 
-
 .btn {
-
     display:inline-block;
-
     background:var(--dourado);
-
     color:white;
-
     padding:15px 30px;
-
     border-radius:30px;
-
     text-decoration:none;
-
     font-weight:bold;
+    transition: background 0.3s;
+}
 
+.btn:hover {
+    background: var(--vinho);
+}
+
+.btn-card {
+    display: inline-block;
+    margin-top: 15px;
+    background: var(--vinho);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 
 
 /* SEÇÕES */
 
-
 section {
-
     padding:70px 8%;
-
 }
-
 
 .title {
-
     text-align:center;
-
     margin-bottom:40px;
-
 }
 
-
 .title h2 {
-
     color:var(--vinho);
-
     font-size:2.2rem;
-
 }
 
 
 /* ESPECIALIDADES */
 
-
 .cards {
-
     display:grid;
-
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
     gap:30px;
-
 }
-
 
 .card {
-
     background:white;
-
     border-radius:15px;
-
     overflow:hidden;
-
     box-shadow:0 10px 25px rgba(0,0,0,.1);
-
 }
-
 
 .card img {
-
     width:100%;
-
     height:220px;
-
     object-fit:cover;
-
 }
-
 
 .card-content {
-
     padding:25px;
-
 }
-
 
 .card h3 {
-
     color:var(--vinho);
-
     margin-bottom:10px;
-
 }
-
 
 
 /* GALERIA */
 
-
 .gallery {
-
     display:grid;
-
     grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-
     gap:20px;
-
 }
-
 
 .gallery img {
-
     width:100%;
-
     height:220px;
-
     object-fit:cover;
-
     border-radius:12px;
-
 }
-
 
 
 /* FOOTER */
 
-
 footer {
-
     background:var(--marrom);
-
     color:white;
-
     text-align:center;
-
     padding:30px;
-
 }
-
 
 @media(max-width:600px){
-
-.hero h1 {
-
-font-size:2.2rem;
-
+    .hero h1 {
+        font-size:2.2rem;
+    }
 }
-
-}
-
 
 </style>
 
 </head>
 
-
 <body>
 
-
 <section class="hero">
-
 <div class="hero-content">
 
+<h1>Esquina da Lauzinha</h1>
 
-<h1>
-Esquina da Lauzinha
-</h1>
-
-
-<p>
-O sabor da esquina mais querida de Taiobeiras
-</p>
-
+<p>O sabor da esquina mais querida de Taiobeiras</p>
 
 <div class="tags">
-
 <span>🍖 Churrasco sob demanda</span>
-
 <span>🍲 O melhor caldo da região</span>
-
 <span>🥘 Feijoada caseira</span>
-
 <span>🍺 Cerveja gelada</span>
-
 <span>🍹 Bebidas quentes</span>
-
 </div>
 
-
-<a class="btn" href="#">
+<!-- Botão principal de disponibilidade (Altere o número do WhatsApp) -->
+<a class="btn" target="_blank" href="https://wa.me/553891932099?text=Olá!%20Gostaria%20de%20consultar%20a%20disponibilidade%20na%20Esquina%20da%20Lauzinha.">
 Consultar disponibilidade
 </a>
 
-
 </div>
-
 </section>
 
 
-
-
 <section>
-
 <div class="title">
-
-<h2>
-Especialidades da Casa
-</h2>
-
+<h2>Especialidades da Casa</h2>
 </div>
-
 
 <div class="cards">
 
-
 <div class="card">
-
 <img src="images/feijoada.jpg">
-
 <div class="card-content">
-
 <h3>Feijoada</h3>
-
-<p>
-Consulte disponibilidade para saborear nossa feijoada especial.
-</p>
-
+<p>Servida especialmente aos sábados, consulte disponibilidade em outros dias.</p>
+<!-- Botão para consultar disponibilidade da Feijoada -->
+<a class="btn-card" target="_blank" href="https://wa.me/553891932099?text=Olá!%20Gostaria%20de%20saber%20a%20disponibilidade%20da%20Feijoada.">Consultar disponibilidade</a>
 </div>
-
 </div>
-
-
 
 <div class="card">
-
 <img src="images/caldo.jpeg">
-
 <div class="card-content">
-
 <h3>Caldo de Quenga</h3>
-
-<p>
-Um dos sabores especiais da casa para reunir amigos.
-</p>
-
+<p>O melhor da região - Um dos sabores especiais da casa para reunir amigos.</p>
+<!-- Botão para consultar disponibilidade do Caldo -->
+<a class="btn-card" target="_blank" href="https://wa.me/553891932099text=Olá!%20Gostaria%20de%20saber%20a%20disponibilidade%20do%20Caldo%20de%20Quenga.">Consultar disponibilidade</a>
 </div>
-
 </div>
-
-
-
 
 <div class="card">
-
 <img src="images/churrasco.jpeg">
-
 <div class="card-content">
-
 <h3>Churrasco sob demanda</h3>
-
-<p>
-Faça sua reserva antecipadamente.
-</p>
-
+<p>Faça sua reserva antecipadamente. Escolha entre cortes nobres como carne de sol, picanha ou contrafilé.</p>
+<!-- Botão para reservar Churrasco -->
+<a class="btn-card" target="_blank" href="https://wa.me/5553891932099?text=Olá!%20Gostaria%20de%20fazer%20uma%20reserva%20de%20Churrasco%20sob%20demanda.">Consultar disponibilidade</a>
+</div>
 </div>
 
 </div>
-
-
-</div>
-
 </section>
 
 
-
-
-
 <section>
-
 <div class="title">
-
-<h2>
-Momentos Especiais
-</h2>
-
+<h2>Momentos Especiais</h2>
 </div>
-
 
 <div class="gallery">
-
-
 <img src="images/momento1.jpg">
-
 <img src="images/momento2.jpg">
-
 <img src="images/momento3.jpg">
-
 <img src="images/momento4.jpg">
-
-
 </div>
-
-
 </section>
-
-
 
 
 <section>
-
 <div class="title">
-
-<h2>
-Comemore seu aniversário conosco
-</h2>
-
-
-<p>
-Consulte disponibilidade para reservar seu momento especial.
-</p>
-
-
+<h2>Comemore seu aniversário conosco</h2>
+<p>Consulte disponibilidade para reservar seu momento especial.</p>
+<br>
+<!-- Botão de reserva para Aniversário -->
+<a class="btn" target="_blank" href="https://wa.me/5553891932099?text=Olá!%20Gostaria%20de%20consultar%20disponibilidade%20para%20comemorar%20meu%20aniversário.">
+Reservar meu aniversário
+</a>
 </div>
-
-
 </section>
-
-
 
 
 <footer>
-
-<p>
-📍 Esquina da Rua Bahia com Rua Goiás - Taiobeiras MG
-</p>
-
-<p>
-Comida boa, amigos e bons momentos.
-</p>
-
+<p>📍 Esquina da Rua Bahia com Rua Goiás - Taiobeiras MG</p>
+<p>Comida boa, amigos e bons momentos.</p>
 </footer>
 
-
-
 </body>
-
 </html>
